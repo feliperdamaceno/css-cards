@@ -1,0 +1,131 @@
+/* =-=-=-=-=-=-=-=-=-=-= Import Section =-=-=-=-=-=-=-=-=-=-=*/
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+/* =-=-=-=-=-=-=-=-=-=-= General Styles =-=-=-=-=-=-=-=-=-=-=*/
+
+:root {
+  /* Font Size */
+  --fs-700: 3.2rem;
+  --fs-400: 1.6rem;
+
+  /* Font Weight */
+  --fw-bold: 700;
+
+  /* Font Family */
+  --ff-sans-normal: "Noto Sans", sans-serif;
+
+  /* Colors */
+  --black-400: #212529;
+  --white-400: #f8f9fa;
+
+  /* Color Variants */
+  --ubuntu-color: #77216f;
+  --fedora-color: #52a2da;
+  --suse-color: #4bb679;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--black-400);
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-400);
+  line-height: 1.5;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-= Card Styles =-=-=-=-=-=-=-=-=-=-=*/
+
+.card {
+  background-color: var(--white-400);
+  border: 0.2rem solid var(--black-400);
+  border-radius: 0.5rem;
+  text-align: center;
+
+  box-shadow: 0 3.9px 4.6px rgba(0, 0, 0, 0.08),
+    0 12.3px 8.4px rgba(0, 0, 0, 0.056), 0 18.8px 19.2px rgba(0, 0, 0, 0.037),
+    0 22px 40px rgba(0, 0, 0, 0.019);
+
+  margin: 2rem;
+  width: 25rem;
+  padding: 2rem 1rem;
+
+  cursor: default;
+  user-select: none;
+  transition: transform 250ms ease-out;
+}
+
+.card:hover {
+  transform: translate(0, -1rem);
+}
+
+.card-image {
+  font-size: 8rem;
+}
+
+.card-title {
+  font-size: var(--fs-700);
+  margin: 0;
+}
+
+.card-text {
+  margin: 2rem 0;
+}
+
+.card-button {
+  background-color: var(--black-400);
+  border-radius: 50rem;
+  border: 0;
+  color: var(--white-400);
+  outline: none;
+
+  font-family: inherit;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-bold);
+
+  padding: 1rem 5rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-= Color Variant Styles =-=-=-=-=-=-=-=-=-=-=*/
+
+.card-ubuntu {
+  background-color: var(--ubuntu-color);
+  border: 0.2rem solid var(--ubuntu-color);
+  color: var(--white-400);
+}
+
+.card-button-ubuntu {
+  background-color: var(--white-400);
+  color: var(--ubuntu-color);
+}
+
+/* =-=-=-=-=-=-=-=-=-=-= Font Awesome Icon Styles =-=-=-=-=-=-=-=-=-=-=*/
+
+.fa-fedora {
+  color: var(--fedora-color);
+}
+
+.fa-ubuntu {
+  color: var(--white-400);
+}
+
+.fa-suse {
+  color: var(--suse-color);
+}
