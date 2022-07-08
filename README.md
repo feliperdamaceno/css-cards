@@ -1,5 +1,7 @@
 ## CSS: Detail Cards
 
+![css-cards-showcase](app-showcase/css-cards-showcase.gif)
+
 This project is a simple study of some Detail Cards made with HTML/CSS in order to share my top 3 favorite Linux Distributions.
 
 ## Licence
